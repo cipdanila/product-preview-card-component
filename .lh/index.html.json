@@ -1,0 +1,190 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 43,
+            "patches": [
+                {
+                    "date": 1706026046237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1706026058325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n \n   Add to Cart\n   \n   <div class=\"attribution\">\n-    Challenge by <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\" rel=\"noopener \">Frontend Mentor</a>. \n+    Challenge by <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\" rel=\"noopener noreferer\">Frontend Mentor</a>. \n     Coded by <a href=\"#\">Your Name Here</a>.\n   </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026177598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   <meta charset=\"UTF-8\">\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <!-- displays site properly based on user's device -->\n \n   <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"./images/favicon-32x32.png\">\n-  \n+  <link rel=\"stylesheet\" href=\"styles.css\">\n   <title>Frontend Mentor | Product preview card component</title>\n \n   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->\n   <style>\n@@ -26,11 +26,11 @@\n   $149.99\n   $169.99\n \n   Add to Cart\n-  \n+\n   <div class=\"attribution\">\n-    Challenge by <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\" rel=\"noopener noreferer\">Frontend Mentor</a>. \n+    Challenge by <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\" rel=\"noopener noreferer\">Frontend Mentor</a>.\n     Coded by <a href=\"#\">Your Name Here</a>.\n   </div>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706030515664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,11 @@\n     .attribution a { color: hsl(228, 45%, 44%); }\n   </style>\n </head>\n <body>\n+  <main>\n+    \n+  </main>\n \n   Preview\n \n   Gabrielle Essence Eau De Parfum\n"
+                },
+                {
+                    "date": 1706030535346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   </style>\n </head>\n <body>\n   <main>\n-    \n+\n   </main>\n \n   Preview\n \n@@ -29,11 +29,12 @@\n   $149.99\n   $169.99\n \n   Add to Cart\n-\n-  <div class=\"attribution\">\n-    Challenge by <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\" rel=\"noopener noreferer\">Frontend Mentor</a>.\n-    Coded by <a href=\"#\">Your Name Here</a>.\n-  </div>\n+  <footer>\n+    <div class=\"attribution\">\n+      Challenge by <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\" rel=\"noopener noreferer\">Frontend Mentor</a>.\n+      Coded by <a href=\"#\">Your Name Here</a>.\n+    </div>\n+  </footer>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706030559568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   </style>\n </head>\n <body>\n   <main>\n-\n+    \n   </main>\n \n   Preview\n \n"
+                },
+                {
+                    "date": 1706030569802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n   </style>\n </head>\n <body>\n   <main>\n-    \n+    <div class=\"container\">\n+      \n+    </div>\n   </main>\n \n   Preview\n \n"
+                },
+                {
+                    "date": 1706030590277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n </head>\n <body>\n   <main>\n     <div class=\"container\">\n-      \n+      <div class=\"image\"></div>\n+      <div class=\"text\"></div>\n     </div>\n   </main>\n \n   Preview\n"
+                },
+                {
+                    "date": 1706030630486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,11 @@\n </head>\n <body>\n   <main>\n     <div class=\"container\">\n-      <div class=\"image\"></div>\n+      <div class=\"image\">\n+        <img src=\"./images/image-product-desktop.jpg\" alt=\"\">\n+      </div>\n       <div class=\"text\"></div>\n     </div>\n   </main>\n \n"
+                },
+                {
+                    "date": 1706030639457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n <body>\n   <main>\n     <div class=\"container\">\n       <div class=\"image\">\n-        <img src=\"./images/image-product-desktop.jpg\" alt=\"\">\n+        <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\">\n       </div>\n       <div class=\"text\"></div>\n     </div>\n   </main>\n"
+                },
+                {
+                    "date": 1706030667297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,13 +19,16 @@\n     <div class=\"container\">\n       <div class=\"image\">\n         <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\">\n       </div>\n-      <div class=\"text\"></div>\n+      <div class=\"text\">\n+        <h2>\n+          Preview\n+        </h2>\n+      </div>\n     </div>\n   </main>\n \n-  Preview\n \n   Gabrielle Essence Eau De Parfum\n \n   A floral, solar and voluptuous interpretation composed by Olivier Polge, \n"
+                },
+                {
+                    "date": 1706030693596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,14 +23,16 @@\n       <div class=\"text\">\n         <h2>\n           Preview\n         </h2>\n+        <h1>\n+          Gabrielle Essence Eau De Parfum\n+        </h1>\n       </div>\n     </div>\n   </main>\n \n \n-  Gabrielle Essence Eau De Parfum\n \n   A floral, solar and voluptuous interpretation composed by Olivier Polge, \n   Perfumer-Creator for the House of CHANEL.\n \n"
+                },
+                {
+                    "date": 1706030739540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,16 +26,18 @@\n         </h2>\n         <h1>\n           Gabrielle Essence Eau De Parfum\n         </h1>\n+        <p>\n+          A floral, solar and voluptuous interpretation composed by Olivier Polge, \n+          Perfumer-Creator for the House of CHANEL.\n+        </p>\n       </div>\n     </div>\n   </main>\n \n \n \n-  A floral, solar and voluptuous interpretation composed by Olivier Polge, \n-  Perfumer-Creator for the House of CHANEL.\n \n   $149.99\n   $169.99\n \n"
+                },
+                {
+                    "date": 1706030790534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,9 @@\n   <title>Frontend Mentor | Product preview card component</title>\n \n   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->\n   <style>\n-    .attribution { font-size: 11px; text-align: center; }\n-    .attribution a { color: hsl(228, 45%, 44%); }\n+    \n   </style>\n </head>\n <body>\n   <main>\n@@ -27,9 +26,9 @@\n         <h1>\n           Gabrielle Essence Eau De Parfum\n         </h1>\n         <p>\n-          A floral, solar and voluptuous interpretation composed by Olivier Polge, \n+          A floral, solar and voluptuous interpretation composed by Olivier Polge,\n           Perfumer-Creator for the House of CHANEL.\n         </p>\n       </div>\n     </div>\n"
+                },
+                {
+                    "date": 1706030806925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,8 @@\n   <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"./images/favicon-32x32.png\">\n   <link rel=\"stylesheet\" href=\"styles.css\">\n   <title>Frontend Mentor | Product preview card component</title>\n \n-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->\n-  <style>\n-    \n-  </style>\n </head>\n <body>\n   <main>\n     <div class=\"container\">\n"
+                },
+                {
+                    "date": 1706115884972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,11 @@\n           A floral, solar and voluptuous interpretation composed by Olivier Polge,\n           Perfumer-Creator for the House of CHANEL.\n         </p>\n       </div>\n+      <div class=\"details\">\n+        \n+      </div>\n     </div>\n   </main>\n \n \n"
+                },
+                {
+                    "date": 1706115932042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n           Perfumer-Creator for the House of CHANEL.\n         </p>\n       </div>\n       <div class=\"details\">\n+        <div class=\"price\"></div>\n         \n       </div>\n     </div>\n   </main>\n"
+                },
+                {
+                    "date": 1706115951104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n         </p>\n       </div>\n       <div class=\"details\">\n         <div class=\"price\"></div>\n-        \n+        .add\n       </div>\n     </div>\n   </main>\n \n"
+                },
+                {
+                    "date": 1706115965884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,11 @@\n         </p>\n       </div>\n       <div class=\"details\">\n         <div class=\"price\"></div>\n-        .add\n+        <div class=\"addToCart\">\n+          \n+        </div>\n       </div>\n     </div>\n   </main>\n \n"
+                },
+                {
+                    "date": 1706115974759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n       </div>\n       <div class=\"details\">\n         <div class=\"price\"></div>\n         <div class=\"addToCart\">\n-          \n+          <a href=\"http://\" target=\"_blank\" rel=\"noopener noreferrer\"></a>\n         </div>\n       </div>\n     </div>\n   </main>\n"
+                },
+                {
+                    "date": 1706116007489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n       </div>\n       <div class=\"details\">\n         <div class=\"price\"></div>\n         <div class=\"addToCart\">\n-          <a href=\"http://\" target=\"_blank\" rel=\"noopener noreferrer\"></a>\n+          <a href=\"#\">Add </a>\n         </div>\n       </div>\n     </div>\n   </main>\n"
+                },
+                {
+                    "date": 1706116021385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n       </div>\n       <div class=\"details\">\n         <div class=\"price\"></div>\n         <div class=\"addToCart\">\n-          <a href=\"#\">Add </a>\n+          <a href=\"#\">Add to Cart</a>\n         </div>\n       </div>\n     </div>\n   </main>\n"
+                },
+                {
+                    "date": 1706116096115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <div class=\"container\">\n       <div class=\"image\">\n         <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\">\n       </div>\n-      <div class=\"text\">\n+      <div class=\"details\">\n         <h2>\n           Preview\n         </h2>\n         <h1>\n"
+                },
+                {
+                    "date": 1706116116046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,15 +25,10 @@\n         <p>\n           A floral, solar and voluptuous interpretation composed by Olivier Polge,\n           Perfumer-Creator for the House of CHANEL.\n         </p>\n+        <a href=\"#\">Add to Cart</a>\n       </div>\n-      <div class=\"details\">\n-        <div class=\"price\"></div>\n-        <div class=\"addToCart\">\n-          <a href=\"#\">Add to Cart</a>\n-        </div>\n-      </div>\n     </div>\n   </main>\n \n \n"
+                },
+                {
+                    "date": 1706116257173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n         <p>\n           A floral, solar and voluptuous interpretation composed by Olivier Polge,\n           Perfumer-Creator for the House of CHANEL.\n         </p>\n+        <p class=\"price\"></p>\n         <a href=\"#\">Add to Cart</a>\n       </div>\n     </div>\n   </main>\n"
+                },
+                {
+                    "date": 1706116295557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,18 +25,16 @@\n         <p>\n           A floral, solar and voluptuous interpretation composed by Olivier Polge,\n           Perfumer-Creator for the House of CHANEL.\n         </p>\n-        <p class=\"price\"></p>\n+        <p class=\"new_price\">$149.99</p>\n+        <p class=\"old_price\">$149.99</p>\n         <a href=\"#\">Add to Cart</a>\n       </div>\n     </div>\n   </main>\n \n \n-\n-\n-  $149.99\n   $169.99\n \n   Add to Cart\n   <footer>\n"
+                },
+                {
+                    "date": 1706116309101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,18 +26,14 @@\n           A floral, solar and voluptuous interpretation composed by Olivier Polge,\n           Perfumer-Creator for the House of CHANEL.\n         </p>\n         <p class=\"new_price\">$149.99</p>\n-        <p class=\"old_price\">$149.99</p>\n+        <p class=\"old_price\">$169.99</p>\n         <a href=\"#\">Add to Cart</a>\n       </div>\n     </div>\n   </main>\n \n-\n-  $169.99\n-\n-  Add to Cart\n   <footer>\n     <div class=\"attribution\">\n       Challenge by <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\" rel=\"noopener noreferer\">Frontend Mentor</a>.\n       Coded by <a href=\"#\">Your Name Here</a>.\n"
+                },
+                {
+                    "date": 1706116338085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,12 @@\n         <p>\n           A floral, solar and voluptuous interpretation composed by Olivier Polge,\n           Perfumer-Creator for the House of CHANEL.\n         </p>\n-        <p class=\"new_price\">$149.99</p>\n-        <p class=\"old_price\">$169.99</p>\n+        <div class=\"price\">\n+          <p class=\"new_price\">$149.99</p>\n+          <p class=\"old_price\">$169.99</p>\n+        </div>\n         <a href=\"#\">Add to Cart</a>\n       </div>\n     </div>\n   </main>\n"
+                },
+                {
+                    "date": 1706126650451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\">\n       </div>\n       <div class=\"details\">\n         <h2>\n-          Preview\n+          Perfume\n         </h2>\n         <h1>\n           Gabrielle Essence Eau De Parfum\n         </h1>\n"
+                },
+                {
+                    "date": 1706126807530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n         <div class=\"price\">\n           <p class=\"new_price\">$149.99</p>\n           <p class=\"old_price\">$169.99</p>\n         </div>\n+        <button></button>\n         <a href=\"#\">Add to Cart</a>\n       </div>\n     </div>\n   </main>\n"
+                },
+                {
+                    "date": 1706126832705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,10 +29,9 @@\n         <div class=\"price\">\n           <p class=\"new_price\">$149.99</p>\n           <p class=\"old_price\">$169.99</p>\n         </div>\n-        <button></button>\n-        <a href=\"#\">Add to Cart</a>\n+        <button class=\"atc\">Add to Cart</button>\n       </div>\n     </div>\n   </main>\n \n"
+                },
+                {
+                    "date": 1706126855750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         <div class=\"price\">\n           <p class=\"new_price\">$149.99</p>\n           <p class=\"old_price\">$169.99</p>\n         </div>\n-        <button class=\"atc\">Add to Cart</button>\n+        <button type=\"button\" class=\"atc\"><img src=\"\" alt=\"\">Add to Cart</button>\n       </div>\n     </div>\n   </main>\n \n"
+                },
+                {
+                    "date": 1706126863071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         <div class=\"price\">\n           <p class=\"new_price\">$149.99</p>\n           <p class=\"old_price\">$169.99</p>\n         </div>\n-        <button type=\"button\" class=\"atc\"><img src=\"\" alt=\"\">Add to Cart</button>\n+        <button type=\"button\" class=\"atc\"><img src=\"./images/icon-cart.svg\" alt=\"\">Add to Cart</button>\n       </div>\n     </div>\n   </main>\n \n"
+                },
+                {
+                    "date": 1706126883421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,11 @@\n         <div class=\"price\">\n           <p class=\"new_price\">$149.99</p>\n           <p class=\"old_price\">$169.99</p>\n         </div>\n-        <button type=\"button\" class=\"atc\"><img src=\"./images/icon-cart.svg\" alt=\"\">Add to Cart</button>\n+        <button type=\"button\" class=\"atc\"><img src=\"./images/icon-cart.svg\" alt=\"icon-cart\">\n+          Add to Cart\n+        </button>\n       </div>\n     </div>\n   </main>\n \n"
+                },
+                {
+                    "date": 1706126945002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,47 +1,45 @@\n <!DOCTYPE html>\n <html lang=\"en\">\n-<head>\n-  <meta charset=\"UTF-8\">\n-  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <!-- displays site properly based on user's device -->\n+    <head>\n+        <meta charset=\"UTF-8\" />\n+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n+        <!-- displays site properly based on user's device -->\n \n-  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"./images/favicon-32x32.png\">\n-  <link rel=\"stylesheet\" href=\"styles.css\">\n-  <title>Frontend Mentor | Product preview card component</title>\n+        <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"./images/favicon-32x32.png\" />\n+        <link rel=\"stylesheet\" href=\"styles.css\" />\n+        <title>Frontend Mentor | Product preview card component</title>\n+    </head>\n+    <body>\n+        <main>\n+            <div class=\"container\">\n+                <div class=\"image\">\n+                    <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\" />\n+                </div>\n+                <div class=\"details\">\n+                    <h2>Perfume</h2>\n+                    <h1>Gabrielle Essence Eau De Parfum</h1>\n+                    <p>\n+                        A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of\n+                        CHANEL.\n+                    </p>\n+                    <div class=\"price\">\n+                        <p class=\"new_price\">$149.99</p>\n+                        <p class=\"old_price\">$169.99</p>\n+                    </div>\n+                    <button type=\"button\" class=\"atc\">\n+                        <img src=\"./images/icon-cart.svg\" alt=\"icon-cart\" />\n+                        Add to Cart\n+                    </button>\n+                </div>\n+            </div>\n+        </main>\n \n-</head>\n-<body>\n-  <main>\n-    <div class=\"container\">\n-      <div class=\"image\">\n\\ No newline at end of file\n-        <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\">\n-      </div>\n-      <div class=\"details\">\n-        <h2>\n-          Perfume\n-        </h2>\n-        <h1>\n-          Gabrielle Essence Eau De Parfum\n-        </h1>\n-        <p>\n-          A floral, solar and voluptuous interpretation composed by Olivier Polge,\n-          Perfumer-Creator for the House of CHANEL.\n-        </p>\n-        <div class=\"price\">\n-          <p class=\"new_price\">$149.99</p>\n-          <p class=\"old_price\">$169.99</p>\n-        </div>\n-        <button type=\"button\" class=\"atc\"><img src=\"./images/icon-cart.svg\" alt=\"icon-cart\">\n-          Add to Cart\n-        </button>\n-      </div>\n-    </div>\n-  </main>\n-\n-  <footer>\n-    <div class=\"attribution\">\n-      Challenge by <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\" rel=\"noopener noreferer\">Frontend Mentor</a>.\n-      Coded by <a href=\"#\">Your Name Here</a>.\n-    </div>\n-  </footer>\n-</body>\n-</html>\n+        <footer>\n+            <div class=\"attribution\">\n+                Challenge by\n+                <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\" rel=\"noopener noreferer\">Frontend Mentor</a\n+                >. Coded by <a href=\"#\">Your Name Here</a>.\n+            </div>\n+        </footer>\n+    </body>\n+</html>\n"
+                },
+                {
+                    "date": 1706128228296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,11 @@\n                 <div class=\"image\">\n                     <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\" />\n                 </div>\n                 <div class=\"details\">\n-                    <h2>Perfume</h2>\n+                    <p>Perfume</p>\n                     <h1>Gabrielle Essence Eau De Parfum</h1>\n-                    <p>\n+                    <p class=\"description\"\">\n                         A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of\n                         CHANEL.\n                     </p>\n                     <div class=\"price\">\n"
+                },
+                {
+                    "date": 1706128235229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n                 <div class=\"image\">\n                     <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\" />\n                 </div>\n                 <div class=\"details\">\n-                    <p>Perfume</p>\n+                    <p >Perfume</p>\n                     <h1>Gabrielle Essence Eau De Parfum</h1>\n                     <p class=\"description\"\">\n                         A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of\n                         CHANEL.\n"
+                },
+                {
+                    "date": 1706128249196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n                 <div class=\"image\">\n                     <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\" />\n                 </div>\n                 <div class=\"details\">\n-                    <p >Perfume</p>\n+                    <p class=\"item-category\">Perfume</p>\n                     <h1>Gabrielle Essence Eau De Parfum</h1>\n                     <p class=\"description\"\">\n                         A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of\n                         CHANEL.\n"
+                },
+                {
+                    "date": 1706129815841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n                     <p class=\"description\"\">\n                         A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of\n                         CHANEL.\n                     </p>\n-                    <div class=\"price\">\n+                    <div class=\"prices\">\n                         <p class=\"new_price\">$149.99</p>\n                         <p class=\"old_price\">$169.99</p>\n                     </div>\n                     <button type=\"button\" class=\"atc\">\n"
+                },
+                {
+                    "date": 1706130516667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,14 +32,14 @@\n                     </button>\n                 </div>\n             </div>\n         </main>\n-\n+<!-- \n         <footer>\n             <div class=\"attribution\">\n                 Challenge by\n                 <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\" rel=\"noopener noreferer\">Frontend Mentor</a\n                 >. Coded by <a href=\"#\">Your Name Here</a>.\n             </div>\n-        </footer>\n+        </footer> -->\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1706130523598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,14 +32,14 @@\n                     </button>\n                 </div>\n             </div>\n         </main>\n-<!-- \n+\n         <footer>\n             <div class=\"attribution\">\n                 Challenge by\n                 <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\" rel=\"noopener noreferer\">Frontend Mentor</a\n                 >. Coded by <a href=\"#\">Your Name Here</a>.\n             </div>\n-        </footer> -->\n+        </footer>\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1706131044042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     <body>\n         <main>\n             <div class=\"container\">\n                 <div class=\"image\">\n-                    <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\" />\n+                    <!-- <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\" /> -->\n                 </div>\n                 <div class=\"details\">\n                     <p class=\"item-category\">Perfume</p>\n                     <h1>Gabrielle Essence Eau De Parfum</h1>\n"
+                },
+                {
+                    "date": 1706131109302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     <body>\n         <main>\n             <div class=\"container\">\n                 <div class=\"image\">\n-                    <!-- <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\" /> -->\n+                    <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\" />\n                 </div>\n                 <div class=\"details\">\n                     <p class=\"item-category\">Perfume</p>\n                     <h1>Gabrielle Essence Eau De Parfum</h1>\n"
+                },
+                {
+                    "date": 1706131144938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     <body>\n         <main>\n             <div class=\"container\">\n                 <div class=\"image\">\n-                    <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\" />\n+                    <!-- <img src=\"./images/image-product-desktop.jpg\" alt=\"perfume-image\" /> -->\n                 </div>\n                 <div class=\"details\">\n                     <p class=\"item-category\">Perfume</p>\n                     <h1>Gabrielle Essence Eau De Parfum</h1>\n"
+                }
+            ],
+            "date": 1706026046236,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <!-- displays site properly based on user's device -->\n\n  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"./images/favicon-32x32.png\">\n  \n  <title>Frontend Mentor | Product preview card component</title>\n\n  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->\n  <style>\n    .attribution { font-size: 11px; text-align: center; }\n    .attribution a { color: hsl(228, 45%, 44%); }\n  </style>\n</head>\n<body>\n\n  Preview\n\n  Gabrielle Essence Eau De Parfum\n\n  A floral, solar and voluptuous interpretation composed by Olivier Polge, \n  Perfumer-Creator for the House of CHANEL.\n\n  $149.99\n  $169.99\n\n  Add to Cart\n  \n  <div class=\"attribution\">\n    Challenge by <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\" rel=\"noopener \">Frontend Mentor</a>. \n    Coded by <a href=\"#\">Your Name Here</a>.\n  </div>\n</body>\n</html>"
+        }
+    ]
+}

@@ -1,0 +1,998 @@
+{
+    "sourceFile": "styles.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 245,
+            "patches": [
+                {
+                    "date": 1706026340889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1706026382354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,5 @@\n @import url(\"https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap\");\n \n+:root {\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026400237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n @import url(\"https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap\");\n \n :root {\n+    /* Colors */\n     \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026423939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n @import url(\"https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap\");\n \n :root {\n     /* Colors */\n+    /* Primary */\n     \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026442764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,7 @@\n \n :root {\n     /* Colors */\n     /* Primary */\n-    \n+    - Dark cyan: hsl(158, 36%, 37%);\n+- Cream: hsl(30, 38%, 92%);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026470335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,8 @@\n \n :root {\n     /* Colors */\n     /* Primary */\n-    - Dark cyan: hsl(158, 36%, 37%);\n-- Cream: hsl(30, 38%, 92%);\n+    --dark-cyan: hsl(158, 36%, 37%);\n+    --cream: hsl(30, 38%, 92%);\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026483362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,7 @@\n     /* Colors */\n     /* Primary */\n     --dark-cyan: hsl(158, 36%, 37%);\n     --cream: hsl(30, 38%, 92%);\n+    /* Neutral */\n     \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026543738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,8 @@\n     /* Primary */\n     --dark-cyan: hsl(158, 36%, 37%);\n     --cream: hsl(30, 38%, 92%);\n     /* Neutral */\n-    \n+    --very-dark-blue: hsl(212, 21%, 14%);\n+    --dark-grayish-blue: hsl(228, 12%, 48%);\n+    --white: hsl(0, 0%, 100%);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026596518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,7 @@\n     /* Neutral */\n     --very-dark-blue: hsl(212, 21%, 14%);\n     --dark-grayish-blue: hsl(228, 12%, 48%);\n     --white: hsl(0, 0%, 100%);\n+\n+    /* Fonts */\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026610931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,9 @@\n     --dark-grayish-blue: hsl(228, 12%, 48%);\n     --white: hsl(0, 0%, 100%);\n \n     /* Fonts */\n+}\n+\n+* {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026619462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,6 +13,7 @@\n     /* Fonts */\n }\n \n * {\n-    \n+    margin: 0;\n+    padding: 0;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026624935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,5 +15,6 @@\n \n * {\n     margin: 0;\n     padding: 0;\n+    box-sizing: border-box;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026639252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,9 @@\n * {\n     margin: 0;\n     padding: 0;\n     box-sizing: border-box;\n+}\n+\n+body {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026650884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,6 @@\n     box-sizing: border-box;\n }\n \n body {\n-    \n+    font-size: 14px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706026963138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n :root {\n     /* Colors */\n     /* Primary */\n-    --dark-cyan: hsl(158, 36%, 37%);\n+    --dark-cyan: hsl(158, 36%, 37%);            /* price & button */\n     --cream: hsl(30, 38%, 92%);\n     /* Neutral */\n     --very-dark-blue: hsl(212, 21%, 14%);\n     --dark-grayish-blue: hsl(228, 12%, 48%);\n"
+                },
+                {
+                    "date": 1706027014235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,12 @@\n \n :root {\n     /* Colors */\n     /* Primary */\n-    --dark-cyan: hsl(158, 36%, 37%);            /* price & button */\n+    --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n     --cream: hsl(30, 38%, 92%);\n     /* Neutral */\n-    --very-dark-blue: hsl(212, 21%, 14%);\n+    --very-dark-blue: hsl(212, 21%, 14%);       /* active 'add to cart' button */\n     --dark-grayish-blue: hsl(228, 12%, 48%);\n     --white: hsl(0, 0%, 100%);\n \n     /* Fonts */\n"
+                },
+                {
+                    "date": 1706027134783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,13 +3,13 @@\n :root {\n     /* Colors */\n     /* Primary */\n     --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n-    --cream: hsl(30, 38%, 92%);\n+    --cream: hsl(30, 38%, 92%);                 /* container background */\n     /* Neutral */\n     --very-dark-blue: hsl(212, 21%, 14%);       /* active 'add to cart' button */\n-    --dark-grayish-blue: hsl(228, 12%, 48%);\n-    --white: hsl(0, 0%, 100%);\n+    --dark-grayish-blue: hsl(228, 12%, 48%);    /* */\n+    --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n }\n \n"
+                },
+                {
+                    "date": 1706027238522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n     --cream: hsl(30, 38%, 92%);                 /* container background */\n     /* Neutral */\n     --very-dark-blue: hsl(212, 21%, 14%);       /* active 'add to cart' button */\n-    --dark-grayish-blue: hsl(228, 12%, 48%);    /* */\n+    --dark-grayish-blue: hsl(228, 12%, 48%);    /* a */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n }\n"
+                },
+                {
+                    "date": 1706027300688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     /* Primary */\n     --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n     --cream: hsl(30, 38%, 92%);                 /* container background */\n     /* Neutral */\n-    --very-dark-blue: hsl(212, 21%, 14%);       /* active 'add to cart' button */\n+    --very-dark-blue: hsl(212, 21%, 14%);       /* h1 title */\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* a */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n"
+                },
+                {
+                    "date": 1706027315120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n     --cream: hsl(30, 38%, 92%);                 /* container background */\n     /* Neutral */\n     --very-dark-blue: hsl(212, 21%, 14%);       /* h1 title */\n-    --dark-grayish-blue: hsl(228, 12%, 48%);    /* a */\n+    --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n }\n"
+                },
+                {
+                    "date": 1706027516892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     /* Primary */\n     --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n     --cream: hsl(30, 38%, 92%);                 /* container background */\n     /* Neutral */\n-    --very-dark-blue: hsl(212, 21%, 14%);       /* h1 title */\n+    --very-dark-blue: hsl(212, 21%, 14%);       /* h1 perfume name title */\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n"
+                },
+                {
+                    "date": 1706027873341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n :root {\n     /* Colors */\n     /* Primary */\n     --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n+    --very-dark-cyan: hsl(156, 42%, 18%);       /* active 'add to cart' button */\n     --cream: hsl(30, 38%, 92%);                 /* container background */\n     /* Neutral */\n     --very-dark-blue: hsl(212, 21%, 14%);       /* h1 perfume name title */\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n"
+                },
+                {
+                    "date": 1706028765833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n :root {\n     /* Colors */\n     /* Primary */\n     --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n-    --very-dark-cyan: hsl(156, 42%, 18%);       /* active 'add to cart' button */\n+    --very-green: hsl(156, 42%, 18%);       /* active 'add to cart' button */\n     --cream: hsl(30, 38%, 92%);                 /* container background */\n     /* Neutral */\n     --very-dark-blue: hsl(212, 21%, 14%);       /* h1 perfume name title */\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n"
+                },
+                {
+                    "date": 1706028954343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n :root {\n     /* Colors */\n     /* Primary */\n     --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n-    --very-green: hsl(156, 42%, 18%);       /* active 'add to cart' button */\n+    --dark-greenish-teal: hsl(156, 42%, 18%);       /* active 'add to cart' button */\n     --cream: hsl(30, 38%, 92%);                 /* container background */\n     /* Neutral */\n     --very-dark-blue: hsl(212, 21%, 14%);       /* h1 perfume name title */\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n"
+                },
+                {
+                    "date": 1706029366523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n+    \n }\n \n * {\n     margin: 0;\n"
+                },
+                {
+                    "date": 1706029381204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n-    \n+    --font-body\n }\n \n * {\n     margin: 0;\n"
+                },
+                {
+                    "date": 1706029401892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n-    --font-body\n+    --font-body: 'Montserrat', sans-serif;\n }\n \n * {\n     margin: 0;\n"
+                },
+                {
+                    "date": 1706029422483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n     --font-body: 'Montserrat', sans-serif;\n+    --font-head\n }\n \n * {\n     margin: 0;\n"
+                },
+                {
+                    "date": 1706029450499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n     --font-body: 'Montserrat', sans-serif;\n-    --font-head\n+    --font-heads: 'Fraunces'\n }\n \n * {\n     margin: 0;\n"
+                },
+                {
+                    "date": 1706029464093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n     --font-body: 'Montserrat', sans-serif;\n-    --font-heads: 'Fraunces'\n+    --font-heads: 'Fraunces', sans-serif;\n }\n \n * {\n     margin: 0;\n"
+                },
+                {
+                    "date": 1706029522661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n-    --font-body: 'Montserrat', sans-serif;\n+    --font-body: 'Montserrat', sans-serif;        /* */\n     --font-heads: 'Fraunces', sans-serif;\n }\n \n * {\n"
+                },
+                {
+                    "date": 1706029538566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n-    --font-body: 'Montserrat', sans-serif;        /* */\n-    --font-heads: 'Fraunces', sans-serif;\n+    --font-body: 'Montserrat', sans-serif;        /* text, button */\n+    --font-heads: 'Fraunces', sans-serif;         /* text, button */\n }\n \n * {\n     margin: 0;\n"
+                },
+                {
+                    "date": 1706029550937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n     --font-body: 'Montserrat', sans-serif;        /* text, button */\n-    --font-heads: 'Fraunces', sans-serif;         /* text, button */\n+    --font-heads: 'Fraunces', sans-serif;         /* perfume name, price */\n }\n \n * {\n     margin: 0;\n"
+                },
+                {
+                    "date": 1706029620866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n-    --font-body: 'Montserrat', sans-serif;        /* text, button */\n+    --font-body: 'Montserrat', sans-serif;        /* text, button,  */\n     --font-heads: 'Fraunces', sans-serif;         /* perfume name, price */\n }\n \n * {\n"
+                },
+                {
+                    "date": 1706029649070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n-    --font-body: 'Montserrat', sans-serif;        /* text, button,  */\n+    --font-body: 'Montserrat', sans-serif;        /* text, button, strike */\n     --font-heads: 'Fraunces', sans-serif;         /* perfume name, price */\n }\n \n * {\n"
+                },
+                {
+                    "date": 1706029769977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n-    --font-body: 'Montserrat', sans-serif;        /* text, button, strike */\n+    --font-body: 'Montserrat', sans-serif;        /* text, button, strikethrough price */\n     --font-heads: 'Fraunces', sans-serif;         /* perfume name, price */\n }\n \n * {\n"
+                },
+                {
+                    "date": 1706029779903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n-    --font-body: 'Montserrat', sans-serif;        /* text, button, strikethrough price */\n+    --font-body: 'Montserrat', sans-serif;        /* text, button, strike through price */\n     --font-heads: 'Fraunces', sans-serif;         /* perfume name, price */\n }\n \n * {\n"
+                },
+                {
+                    "date": 1706029810316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n :root {\n     /* Colors */\n     /* Primary */\n     --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n-    --dark-greenish-teal: hsl(156, 42%, 18%);       /* active 'add to cart' button */\n+    --dark-greenish-teal: hsl(156, 42%, 18%);   /* active 'add to cart' button (added  */\n     --cream: hsl(30, 38%, 92%);                 /* container background */\n     /* Neutral */\n     --very-dark-blue: hsl(212, 21%, 14%);       /* h1 perfume name title */\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n"
+                },
+                {
+                    "date": 1706029848757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n :root {\n     /* Colors */\n     /* Primary */\n     --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n-    --dark-greenish-teal: hsl(156, 42%, 18%);   /* active 'add to cart' button (added  */\n+    --dark-greenish-teal: hsl(156, 42%, 18%);   /* active 'add to cart' button (added) */\n     --cream: hsl(30, 38%, 92%);                 /* container background */\n     /* Neutral */\n     --very-dark-blue: hsl(212, 21%, 14%);       /* h1 perfume name title */\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n"
+                },
+                {
+                    "date": 1706029893810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,5 +23,6 @@\n }\n \n body {\n     font-size: 14px;\n+    font-family: var(--font-body);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706029920861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,5 +24,6 @@\n \n body {\n     font-size: 14px;\n     font-family: var(--font-body);\n+    background-color: var(--cream);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706030798560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,19 +2,19 @@\n \n :root {\n     /* Colors */\n     /* Primary */\n-    --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n-    --dark-greenish-teal: hsl(156, 42%, 18%);   /* active 'add to cart' button (added) */\n-    --cream: hsl(30, 38%, 92%);                 /* container background */\n+    --dark-cyan: hsl(158, 36%, 37%); /* price & 'add to cart' button */\n+    --dark-greenish-teal: hsl(156, 42%, 18%); /* active 'add to cart' button (added) */\n+    --cream: hsl(30, 38%, 92%); /* container background */\n     /* Neutral */\n-    --very-dark-blue: hsl(212, 21%, 14%);       /* h1 perfume name title */\n-    --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n-    --white: hsl(0, 0%, 100%);                  /* button font color */\n+    --very-dark-blue: hsl(212, 21%, 14%); /* h1 perfume name title */\n+    --dark-grayish-blue: hsl(228, 12%, 48%); /* ordinary text */\n+    --white: hsl(0, 0%, 100%); /* button font color */\n \n     /* Fonts */\n-    --font-body: 'Montserrat', sans-serif;        /* text, button, strike through price */\n-    --font-heads: 'Fraunces', sans-serif;         /* perfume name, price */\n+    --font-body: \"Montserrat\", sans-serif; /* text, button, strike through price */\n+    --font-heads: \"Fraunces\", sans-serif; /* perfume name, price */\n }\n \n * {\n     margin: 0;\n@@ -25,5 +25,13 @@\n body {\n     font-size: 14px;\n     font-family: var(--font-body);\n     background-color: var(--cream);\n-}\n\\ No newline at end of file\n+}\n+\n+.attribution {\n+    font-size: 11px;\n+    text-align: center;\n+}\n+.attribution a {\n+    color: hsl(228, 45%, 44%);\n+}\n"
+                },
+                {
+                    "date": 1706116680462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,10 @@\n     font-family: var(--font-body);\n     background-color: var(--cream);\n }\n \n+\n+\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706116714113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,12 @@\n     font-family: var(--font-body);\n     background-color: var(--cream);\n }\n \n+.container {\n+    display: flex;\n+}\n \n-\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706116739086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n }\n \n .container {\n     display: flex;\n+    flex-direction: column;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706116802843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n \n .container {\n     display: flex;\n     flex-direction: column;\n+    align-items: start;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706116831127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n .container {\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n+    padding: ;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706116840724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n .container {\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n-    padding: ;\n+    padding: 1.5rem;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706116855534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n     padding: 1.5rem;\n+    margin: ;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706116865789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n     padding: 1.5rem;\n-    margin: ;\n+    margin: 5rem auto;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706116888684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,10 @@\n     padding: 1.5rem;\n     margin: 5rem auto;\n }\n \n+\n+\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706116910646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,12 @@\n     padding: 1.5rem;\n     margin: 5rem auto;\n }\n \n+.details {\n+    \n+}\n \n-\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706117030394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,17 +28,19 @@\n     background-color: var(--cream);\n }\n \n .container {\n+    width: 50%;\n+    height: 50%;\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n     padding: 1.5rem;\n     margin: 5rem auto;\n }\n \n .details {\n-    \n+\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706117084377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n     padding: 1.5rem;\n     margin: 5rem auto;\n }\n \n-.details {\n+.container .details {\n \n }\n \n .attribution {\n"
+                },
+                {
+                    "date": 1706117098530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n     padding: 1.5rem;\n     margin: 5rem auto;\n }\n \n-.container .details {\n+.container .image {\n \n }\n \n .attribution {\n"
+                },
+                {
+                    "date": 1706117110900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,10 @@\n     margin: 5rem auto;\n }\n \n .container .image {\n-\n+    height: 100%;\n+    width: 50%;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706117117443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,9 @@\n \n .container .image {\n     height: 100%;\n     width: 50%;\n+    position: fixed;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706117156524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,10 +41,18 @@\n .container .image {\n     height: 100%;\n     width: 50%;\n     position: fixed;\n+    left: 0;\n }\n \n+.container .details {\n+    height: 100%;\n+    width: 50%;\n+    position: fixed;\n+    left: 0;\n+}\n+\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706117166676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n .container .details {\n     height: 100%;\n     width: 50%;\n     position: fixed;\n-    left: 0;\n+    right: 0;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706127532267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n     padding: 1.5rem;\n-    margin: 5rem auto;\n+    margin: 1.9rem auto;\n }\n \n .container .image {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706127598466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     height: 50%;\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n-    padding: 1.5rem;\n+    padding: 0 1.9rem;\n     margin: 1.9rem auto;\n }\n \n .container .image {\n"
+                },
+                {
+                    "date": 1706127652984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,10 @@\n     background-color: var(--cream);\n }\n \n .container {\n-    width: 50%;\n-    height: 50%;\n+    max-width: 700px;\n+    /* height: 50%; */\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n     padding: 0 1.9rem;\n"
+                },
+                {
+                    "date": 1706127671352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n body {\n     font-size: 14px;\n     font-family: var(--font-body);\n     background-color: var(--cream);\n+    color: blue;\n }\n \n .container {\n     max-width: 700px;\n"
+                },
+                {
+                    "date": 1706127713894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,14 +25,13 @@\n body {\n     font-size: 14px;\n     font-family: var(--font-body);\n     background-color: var(--cream);\n-    color: blue;\n }\n \n .container {\n     max-width: 700px;\n-    /* height: 50%; */\n+    height: 50%;\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n     padding: 0 1.9rem;\n"
+                },
+                {
+                    "date": 1706127721294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,8 @@\n }\n \n .container {\n     max-width: 700px;\n-    height: 50%;\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n     padding: 0 1.9rem;\n"
+                },
+                {
+                    "date": 1706127783982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n     flex-direction: column;\n     align-items: start;\n     padding: 0 1.9rem;\n     margin: 1.9rem auto;\n+    background-color: var(--white);\n }\n \n .container .image {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706127850782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n     align-items: start;\n     padding: 0 1.9rem;\n     margin: 1.9rem auto;\n     background-color: var(--white);\n+    border-radius: 1rem;\n }\n \n .container .image {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706127871654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     flex-direction: column;\n     align-items: start;\n     padding: 0 1.9rem;\n     margin: 1.9rem auto;\n-    background-color: var(--white);\n+    background-color: rebeccapurple;\n     border-radius: 1rem;\n }\n \n .container .image {\n"
+                },
+                {
+                    "date": 1706127884325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     flex-direction: column;\n     align-items: start;\n     padding: 0 1.9rem;\n     margin: 1.9rem auto;\n-    background-color: rebeccapurple;\n+    background-color: var(--white);\n     border-radius: 1rem;\n }\n \n .container .image {\n"
+                },
+                {
+                    "date": 1706127899764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     background-color: var(--white);\n     border-radius: 1rem;\n }\n \n-.container .image {\n+.container img {\n     height: 100%;\n     width: 50%;\n     position: fixed;\n     left: 0;\n"
+                },
+                {
+                    "date": 1706127956613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,16 +41,14 @@\n \n .container img {\n     height: 100%;\n     width: 50%;\n-    position: fixed;\n     left: 0;\n }\n \n .container .details {\n     height: 100%;\n     width: 50%;\n-    position: fixed;\n     right: 0;\n }\n \n .attribution {\n"
+                },
+                {
+                    "date": 1706128004294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,15 +41,13 @@\n \n .container img {\n     height: 100%;\n     width: 50%;\n-    left: 0;\n }\n \n .container .details {\n     height: 100%;\n     width: 50%;\n-    right: 0;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706128047149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,9 @@\n \n .container img {\n     height: 100%;\n     width: 50%;\n+    overflow: hidden;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706128089786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,14 +36,14 @@\n     padding: 0 1.9rem;\n     margin: 1.9rem auto;\n     background-color: var(--white);\n     border-radius: 1rem;\n+    overflow: hidden;\n }\n \n .container img {\n     height: 100%;\n     width: 50%;\n-    overflow: hidden;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706128116045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,14 +36,14 @@\n     padding: 0 1.9rem;\n     margin: 1.9rem auto;\n     background-color: var(--white);\n     border-radius: 1rem;\n-    overflow: hidden;\n }\n \n .container img {\n     height: 100%;\n     width: 50%;\n+    overflow: hidden;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706128369436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,18 +2,18 @@\n \n :root {\n     /* Colors */\n     /* Primary */\n-    --dark-cyan: hsl(158, 36%, 37%); /* price & 'add to cart' button */\n-    --dark-greenish-teal: hsl(156, 42%, 18%); /* active 'add to cart' button (added) */\n-    --cream: hsl(30, 38%, 92%); /* container background */\n+    --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n+    --dark-greenish-teal: hsl(156, 42%, 18%);   /* active 'add to cart' button (added) */\n+    --cream: hsl(30, 38%, 92%);                 /* container background */\n     /* Neutral */\n-    --very-dark-blue: hsl(212, 21%, 14%); /* h1 perfume name title */\n-    --dark-grayish-blue: hsl(228, 12%, 48%); /* ordinary text */\n-    --white: hsl(0, 0%, 100%); /* button font color */\n+    --very-dark-blue: hsl(212, 21%, 14%);       /* h1 perfume name title */\n+    --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n+    --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n-    --font-body: \"Montserrat\", sans-serif; /* text, button, strike through price */\n+    --font-body: \"Montserrat\", sans-serif;      /* text, button, strike through price */\n     --font-heads: \"Fraunces\", sans-serif; /* perfume name, price */\n }\n \n * {\n@@ -36,14 +36,14 @@\n     padding: 0 1.9rem;\n     margin: 1.9rem auto;\n     background-color: var(--white);\n     border-radius: 1rem;\n+    overflow: hidden;\n }\n \n .container img {\n     height: 100%;\n     width: 50%;\n-    overflow: hidden;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706128381845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n \n     /* Fonts */\n-    --font-body: \"Montserrat\", sans-serif;      /* text, button, strike through price */\n-    --font-heads: \"Fraunces\", sans-serif; /* perfume name, price */\n+    --font-body: \"Montserrat\", sans-serif;        /* text, button, strike through price */\n+    --font-heads: \"Fraunces\", sans-serif;         /* perfume name, price */\n }\n \n * {\n     margin: 0;\n"
+                },
+                {
+                    "date": 1706128423100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n :root {\n     /* Colors */\n     /* Primary */\n     --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n-    --dark-greenish-teal: hsl(156, 42%, 18%);   /* active 'add to cart' button (added) */\n+    --dark-greenish-teal: hsl(156, 42%, 18%);   /* active 'add to cart' button (added) on hover */\n     --cream: hsl(30, 38%, 92%);                 /* container background */\n     /* Neutral */\n     --very-dark-blue: hsl(212, 21%, 14%);       /* h1 perfume name title */\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n"
+                },
+                {
+                    "date": 1706128476154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n     box-sizing: border-box;\n }\n \n body {\n+    \n     font-size: 14px;\n     font-family: var(--font-body);\n     background-color: var(--cream);\n }\n"
+                },
+                {
+                    "date": 1706128481994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n     box-sizing: border-box;\n }\n \n body {\n+    width: 100%;\n     \n     font-size: 14px;\n     font-family: var(--font-body);\n     background-color: var(--cream);\n"
+                },
+                {
+                    "date": 1706128487334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n }\n \n body {\n     width: 100%;\n-    \n+    height: 100vh;\n     font-size: 14px;\n     font-family: var(--font-body);\n     background-color: var(--cream);\n }\n"
+                },
+                {
+                    "date": 1706128495875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n \n body {\n     width: 100%;\n     height: 100vh;\n+    display: flex;\n     font-size: 14px;\n     font-family: var(--font-body);\n     background-color: var(--cream);\n }\n"
+                },
+                {
+                    "date": 1706128505363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n body {\n     width: 100%;\n     height: 100vh;\n     display: flex;\n+    align-items: center;\n     font-size: 14px;\n     font-family: var(--font-body);\n     background-color: var(--cream);\n }\n"
+                },
+                {
+                    "date": 1706128511542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n     width: 100%;\n     height: 100vh;\n     display: flex;\n     align-items: center;\n+    justify-content: center;\n     font-size: 14px;\n     font-family: var(--font-body);\n     background-color: var(--cream);\n }\n"
+                },
+                {
+                    "date": 1706128535560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     /* Colors */\n     /* Primary */\n     --dark-cyan: hsl(158, 36%, 37%);            /* price & 'add to cart' button */\n     --dark-greenish-teal: hsl(156, 42%, 18%);   /* active 'add to cart' button (added) on hover */\n-    --cream: hsl(30, 38%, 92%);                 /* container background */\n+    --cream: hsl(30, 38%, 92%);                 /* body background */\n     /* Neutral */\n     --very-dark-blue: hsl(212, 21%, 14%);       /* h1 perfume name title */\n     --dark-grayish-blue: hsl(228, 12%, 48%);    /* ordinary text */\n     --white: hsl(0, 0%, 100%);                  /* button font color */\n"
+                },
+                {
+                    "date": 1706128559127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,12 @@\n     font-family: var(--font-body);\n     background-color: var(--cream);\n }\n \n+main {\n+    width: 100%;\n+}\n+\n .container {\n     max-width: 700px;\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1706128586625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n     width: 100%;\n }\n \n .container {\n-    max-width: 700px;\n+    max-width: 600px;\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n     padding: 0 1.9rem;\n"
+                },
+                {
+                    "date": 1706128839073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n     width: 100%;\n }\n \n .container {\n-    max-width: 600px;\n+    min-width: 600px;\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n     padding: 0 1.9rem;\n"
+                },
+                {
+                    "date": 1706128848195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n }\n \n .container {\n     min-width: 600px;\n+    width: 30%;\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n     padding: 0 1.9rem;\n"
+                },
+                {
+                    "date": 1706128859363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n     padding: 0 1.9rem;\n-    margin: 1.9rem auto;\n+    margin: 0 auto;\n     background-color: var(--white);\n     border-radius: 1rem;\n     overflow: hidden;\n }\n"
+                },
+                {
+                    "date": 1706128889432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     align-items: start;\n     padding: 0 1.9rem;\n     margin: 0 auto;\n     background-color: var(--white);\n-    border-radius: 1rem;\n+    border-radius: 0.625rem;\n     overflow: hidden;\n }\n \n .container img {\n"
+                },
+                {
+                    "date": 1706128909337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,13 +42,11 @@\n     width: 30%;\n     display: flex;\n     flex-direction: column;\n     align-items: start;\n-    padding: 0 1.9rem;\n     margin: 0 auto;\n     background-color: var(--white);\n     border-radius: 0.625rem;\n-    overflow: hidden;\n }\n \n .container img {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706128914945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,8 @@\n .container {\n     min-width: 600px;\n     width: 30%;\n     display: flex;\n-    flex-direction: column;\n-    align-items: start;\n     margin: 0 auto;\n     background-color: var(--white);\n     border-radius: 0.625rem;\n }\n"
+                },
+                {
+                    "date": 1706128953292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     background-color: var(--white);\n     border-radius: 0.625rem;\n }\n \n-.container img {\n+.container .image {\n     height: 100%;\n     width: 50%;\n }\n \n"
+                },
+                {
+                    "date": 1706128974201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,8 @@\n     border-radius: 0.625rem;\n }\n \n .container .image {\n-    height: 100%;\n     width: 50%;\n }\n \n .container .details {\n"
+                },
+                {
+                    "date": 1706128985646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,9 @@\n }\n \n .container .image {\n     width: 50%;\n+    background-position: center;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706129003734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,9 @@\n \n .container .image {\n     width: 50%;\n     background-position: center;\n+    background-\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706129023022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n \n .container .image {\n     width: 50%;\n     background-position: center;\n-    background-\n+    background-size: cover;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706129095199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,10 @@\n .container .image {\n     width: 50%;\n     background-position: center;\n     background-size: cover;\n+    height: 100%;\n+    b\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706129107524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,10 +49,9 @@\n .container .image {\n     width: 50%;\n     background-position: center;\n     background-size: cover;\n-    height: 100%;\n-    b\n+    border-top-right-radius: ;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706129113992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n .container .image {\n     width: 50%;\n     background-position: center;\n     background-size: cover;\n-    border-top-right-radius: ;\n+    border-top-left-radius: ;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706129123446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n .container .image {\n     width: 50%;\n     background-position: center;\n     background-size: cover;\n-    border-top-left-radius: ;\n+    border-top-left-radius: 10px;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706129144707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,8 +50,9 @@\n     width: 50%;\n     background-position: center;\n     background-size: cover;\n     border-top-left-radius: 10px;\n+    border-bottom-left-radius: 10px;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706129164493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n .container .image {\n     width: 50%;\n     background-position: center;\n     background-size: cover;\n-    border-top-left-radius: 10px;\n+    border-top-left-radius: 0.625rem;\n     border-bottom-left-radius: 10px;\n }\n \n .container .details {\n"
+                },
+                {
+                    "date": 1706129172323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     width: 50%;\n     background-position: center;\n     background-size: cover;\n     border-top-left-radius: 0.625rem;\n-    border-bottom-left-radius: 10px;\n+    border-bottom-left-radius: 0.625rem;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706129195239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,12 @@\n     border-bottom-left-radius: 0.625rem;\n }\n \n .container .details {\n+    \n+}\n+\n+.container .details {\n     height: 100%;\n     width: 50%;\n }\n \n"
+                },
+                {
+                    "date": 1706129201373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     border-bottom-left-radius: 0.625rem;\n }\n \n .container .details {\n-    \n+    width: 50%;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706129213481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,9 @@\n }\n \n .container .details {\n     width: 50%;\n+    display: flex;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706129225809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,9 @@\n \n .container .details {\n     width: 50%;\n     display: flex;\n+    flex-direction: column;\n }\n \n .container .details {\n     height: 100%;\n"
+                },
+                {
+                    "date": 1706129246169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,13 +59,8 @@\n     display: flex;\n     flex-direction: column;\n }\n \n-.container .details {\n-    height: 100%;\n-    width: 50%;\n-}\n-\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706129271406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,17 +45,17 @@\n     background-color: var(--white);\n     border-radius: 0.625rem;\n }\n \n-.container .image {\n+.image {\n     width: 50%;\n     background-position: center;\n     background-size: cover;\n     border-top-left-radius: 0.625rem;\n     border-bottom-left-radius: 0.625rem;\n }\n \n-.container .details {\n+.details {\n     width: 50%;\n     display: flex;\n     flex-direction: column;\n }\n"
+                },
+                {
+                    "date": 1706129288238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,9 @@\n .details {\n     width: 50%;\n     display: flex;\n     flex-direction: column;\n+    row-gap: ;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129303877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,10 @@\n .details {\n     width: 50%;\n     display: flex;\n     flex-direction: column;\n-    row-gap: ;\n+    row-gap: 1.5rem;\n+    \n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129339014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n     width: 50%;\n     display: flex;\n     flex-direction: column;\n     row-gap: 1.5rem;\n-    \n+    padding: 2.2rem;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129349647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n     width: 50%;\n     display: flex;\n     flex-direction: column;\n     row-gap: 1.5rem;\n-    padding: 2.2rem;\n+    padding: 2.2rem 2.5rem;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129407590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n     display: flex;\n     flex-direction: column;\n     row-gap: 1.5rem;\n     padding: 2.2rem 2.5rem;\n+    border-top-left-radius: ;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129418298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     display: flex;\n     flex-direction: column;\n     row-gap: 1.5rem;\n     padding: 2.2rem 2.5rem;\n-    border-top-left-radius: ;\n+    border-top-right-radius: ;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129425973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,10 @@\n     display: flex;\n     flex-direction: column;\n     row-gap: 1.5rem;\n     padding: 2.2rem 2.5rem;\n-    border-top-right-radius: ;\n+    border-top-right-radius: 0.625rem;\n+    border-top-right-radius: 0.625rem;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129435706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n     flex-direction: column;\n     row-gap: 1.5rem;\n     padding: 2.2rem 2.5rem;\n     border-top-right-radius: 0.625rem;\n-    border-top-right-radius: 0.625rem;\n+    border-bottom-right-radius: 0.625rem;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129459700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,12 @@\n     border-top-right-radius: 0.625rem;\n     border-bottom-right-radius: 0.625rem;\n }\n \n+.item-category {\n+    \n+}\n+\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706129476831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,8 +64,9 @@\n     border-bottom-right-radius: 0.625rem;\n }\n \n .item-category {\n+    font-size: 16px;\n     \n }\n \n .attribution {\n"
+                },
+                {
+                    "date": 1706129524219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n }\n \n .item-category {\n     font-size: 16px;\n-    \n+    color: var(--dark-cyan);\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129584655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n }\n \n .item-category {\n     font-size: 16px;\n-    color: var(--dark-cyan);\n+    color: var(--dark-grayish-blue);\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129599564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,8 +66,9 @@\n \n .item-category {\n     font-size: 16px;\n     color: var(--dark-grayish-blue);\n+    letter-spacing: 4px;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129607597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n \n .item-category {\n     font-size: 16px;\n     color: var(--dark-grayish-blue);\n-    letter-spacing: 4px;\n+    letter-spacing: 0.25rem;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129623724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,8 +67,9 @@\n .item-category {\n     font-size: 16px;\n     color: var(--dark-grayish-blue);\n     letter-spacing: 0.25rem;\n+    text-transform: uppercase;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129649442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,8 +68,9 @@\n     font-size: 16px;\n     color: var(--dark-grayish-blue);\n     letter-spacing: 0.25rem;\n     text-transform: uppercase;\n+    font-weight: 500;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129660191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,8 +71,12 @@\n     text-transform: uppercase;\n     font-weight: 500;\n }\n \n+h1 {\n+    \n+}\n+\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706129666164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,9 @@\n     font-weight: 500;\n }\n \n h1 {\n-    \n+    font-size: ;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129679178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,9 @@\n     font-weight: 500;\n }\n \n h1 {\n-    font-size: ;\n+    font-size: 2.375rem;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129712623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,8 +73,9 @@\n }\n \n h1 {\n     font-size: 2.375rem;\n+    color: var(--very-dark-blue);\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129731353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,8 +76,12 @@\n     font-size: 2.375rem;\n     color: var(--very-dark-blue);\n }\n \n+.description {\n+    \n+}\n+\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706129741762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,9 +77,9 @@\n     color: var(--very-dark-blue);\n }\n \n .description {\n-    \n+    width: 85%;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129748339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,8 +78,9 @@\n }\n \n .description {\n     width: 85%;\n+    line-height: 1.5;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129782730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,8 +79,9 @@\n \n .description {\n     width: 85%;\n     line-height: 1.5;\n+    color: var(--dark-grayish-blue);\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129792879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,9 @@\n .description {\n     width: 85%;\n     line-height: 1.5;\n     color: var(--dark-grayish-blue);\n+    font-size: 14px;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129811595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,8 +83,10 @@\n     color: var(--dark-grayish-blue);\n     font-size: 14px;\n }\n \n+.price {}\n+\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706129820765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,11 @@\n     color: var(--dark-grayish-blue);\n     font-size: 14px;\n }\n \n-.price {}\n+.prices {\n+    \n+}\n \n .attribution {\n     font-size: 11px;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1706129836623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,8 +84,9 @@\n     font-size: 14px;\n }\n \n .prices {\n+    width: 100%;\n     \n }\n \n .attribution {\n"
+                },
+                {
+                    "date": 1706129844067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n }\n \n .prices {\n     width: 100%;\n-    \n+    display: flex;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129881275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,8 +86,10 @@\n \n .prices {\n     width: 100%;\n     display: flex;\n+    align-items: center;\n+    gap: ;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129902064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,11 +87,15 @@\n .prices {\n     width: 100%;\n     display: flex;\n     align-items: center;\n-    gap: ;\n+    gap: 1.5rem;\n }\n \n+.new_price {\n+    \n+}\n+\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706129912456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,9 +91,9 @@\n     gap: 1.5rem;\n }\n \n .new_price {\n-    \n+    font-size: ;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129922288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,9 +91,9 @@\n     gap: 1.5rem;\n }\n \n .new_price {\n-    font-size: ;\n+    font-size: 2.25rem;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129965629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,8 +92,9 @@\n }\n \n .new_price {\n     font-size: 2.25rem;\n+    color: var(--dark-cyan);\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706129985712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,12 @@\n     font-size: 2.25rem;\n     color: var(--dark-cyan);\n }\n \n+.old_price {\n+    \n+}\n+\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706130003227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,9 @@\n     color: var(--dark-cyan);\n }\n \n .old_price {\n-    \n+    font-size: 14px;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130015932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,8 +97,9 @@\n }\n \n .old_price {\n     font-size: 14px;\n+    text-decoration: line-through;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130063958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,8 +98,9 @@\n \n .old_price {\n     font-size: 14px;\n     text-decoration: line-through;\n+    color: var(--dark-grayish-blue);\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130085526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,8 +101,12 @@\n     text-decoration: line-through;\n     color: var(--dark-grayish-blue);\n }\n \n+button {\n+    \n+}\n+\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706130098515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -102,9 +102,9 @@\n     color: var(--dark-grayish-blue);\n }\n \n button {\n-    \n+    width: 100%;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130106536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,8 +103,9 @@\n }\n \n button {\n     width: 100%;\n+    padding: ;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130119741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,9 +103,9 @@\n }\n \n button {\n     width: 100%;\n-    padding: ;\n+    padding: 1rem ;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130132006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,9 +103,10 @@\n }\n \n button {\n     width: 100%;\n-    padding: 1rem ;\n+    padding: 1rem 0;\n+    margin: 0 auto;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130141752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,8 +105,9 @@\n button {\n     width: 100%;\n     padding: 1rem 0;\n     margin: 0 auto;\n+    display: flex;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130150050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,8 +106,9 @@\n     width: 100%;\n     padding: 1rem 0;\n     margin: 0 auto;\n     display: flex;\n+    justify-content: center;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130162177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,8 +107,9 @@\n     padding: 1rem 0;\n     margin: 0 auto;\n     display: flex;\n     justify-content: center;\n+    align-items: center;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130183805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,8 +108,10 @@\n     margin: 0 auto;\n     display: flex;\n     justify-content: center;\n     align-items: center;\n+    color: var(--white);\n+    \n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130231448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,9 +109,9 @@\n     display: flex;\n     justify-content: center;\n     align-items: center;\n     color: var(--white);\n-    \n+    background-color: var(--dark-cyan);\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130244103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,8 +110,9 @@\n     justify-content: center;\n     align-items: center;\n     color: var(--white);\n     background-color: var(--dark-cyan);\n+    font-weight: 700;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130254512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,8 +111,9 @@\n     align-items: center;\n     color: var(--white);\n     background-color: var(--dark-cyan);\n     font-weight: 700;\n+    border-radius: 7px;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130275724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,8 +112,10 @@\n     color: var(--white);\n     background-color: var(--dark-cyan);\n     font-weight: 700;\n     border-radius: 7px;\n+    border: none;\n+    cursor: pointer;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130295535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,8 +116,12 @@\n     border: none;\n     cursor: pointer;\n }\n \n+button:hover {\n+    \n+}\n+\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706130318226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,9 +117,9 @@\n     cursor: pointer;\n }\n \n button:hover {\n-    \n+    background-color: var(--dark-greenish-teal);\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130349594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,8 +120,12 @@\n button:hover {\n     background-color: var(--dark-greenish-teal);\n }\n \n+button img {\n+    \n+}\n+\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706130355698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n     background-color: var(--dark-greenish-teal);\n }\n \n button img {\n-    \n+    margin-right: 7px;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706130622417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,12 +31,12 @@\n     font-size: 14px;\n     font-family: var(--font-body);\n     background-color: var(--cream);\n }\n-\n+/* \n main {\n     width: 100%;\n-}\n+} */\n \n .container {\n     min-width: 600px;\n     width: 30%;\n"
+                },
+                {
+                    "date": 1706130633624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,12 +31,12 @@\n     font-size: 14px;\n     font-family: var(--font-body);\n     background-color: var(--cream);\n }\n-/* \n+\n main {\n     width: 100%;\n-} */\n+}\n \n .container {\n     min-width: 600px;\n     width: 30%;\n"
+                },
+                {
+                    "date": 1706130861671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,11 +32,11 @@\n     font-family: var(--font-body);\n     background-color: var(--cream);\n }\n \n-main {\n+/* main {\n     width: 100%;\n-}\n+} */\n \n .container {\n     min-width: 600px;\n     width: 30%;\n"
+                },
+                {
+                    "date": 1706130875129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,11 +32,11 @@\n     font-family: var(--font-body);\n     background-color: var(--cream);\n }\n \n-/* main {\n+main {\n     width: 100%;\n-} */\n+}\n \n .container {\n     min-width: 600px;\n     width: 30%;\n"
+                },
+                {
+                    "date": 1706130917338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,9 @@\n main {\n     width: 100%;\n }\n \n+footer {{}\n .container {\n     min-width: 600px;\n     width: 30%;\n     display: flex;\n"
+                },
+                {
+                    "date": 1706130931156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,11 @@\n main {\n     width: 100%;\n }\n \n-footer {{}\n+footer {\n+    width: 100%;\n+}\n .container {\n     min-width: 600px;\n     width: 30%;\n     display: flex;\n"
+                },
+                {
+                    "date": 1706130937226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,9 @@\n \n footer {\n     width: 100%;\n }\n+\n .container {\n     min-width: 600px;\n     width: 30%;\n     display: flex;\n"
+                },
+                {
+                    "date": 1706131016335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,12 +36,8 @@\n main {\n     width: 100%;\n }\n \n-footer {\n-    width: 100%;\n-}\n-\n .container {\n     min-width: 600px;\n     width: 30%;\n     display: flex;\n"
+                },
+                {
+                    "date": 1706131059143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n     border-radius: 0.625rem;\n }\n \n .image {\n+    background-image: url(./images/image-product-desktop.jpg);\n     width: 50%;\n     background-position: center;\n     background-size: cover;\n     border-top-left-radius: 0.625rem;\n"
+                },
+                {
+                    "date": 1706131108193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,12 +46,12 @@\n     border-radius: 0.625rem;\n }\n \n .image {\n-    background-image: url(./images/image-product-desktop.jpg);\n+    /* background-image: url(./images/image-product-desktop.jpg);\n+    background-position: center;\n+    background-size: cover; */\n     width: 50%;\n-    background-position: center;\n-    background-size: cover;\n     border-top-left-radius: 0.625rem;\n     border-bottom-left-radius: 0.625rem;\n }\n \n"
+                },
+                {
+                    "date": 1706131139928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,11 +46,11 @@\n     border-radius: 0.625rem;\n }\n \n .image {\n-    /* background-image: url(./images/image-product-desktop.jpg);\n+    background-image: url(./images/image-product-desktop.jpg);\n     background-position: center;\n-    background-size: cover; */\n+    background-size: cover;\n     width: 50%;\n     border-top-left-radius: 0.625rem;\n     border-bottom-left-radius: 0.625rem;\n }\n"
+                },
+                {
+                    "date": 1706194879084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n body {\n     width: 100%;\n     height: 100vh;\n     display: flex;\n+    flex-direction: column;\n     align-items: center;\n     justify-content: center;\n     font-size: 14px;\n     font-family: var(--font-body);\n@@ -43,25 +44,25 @@\n     display: flex;\n     margin: 0 auto;\n     background-color: var(--white);\n     border-radius: 0.625rem;\n+    margin: 4rem auto;\n }\n \n .image {\n-    background-image: url(./images/image-product-desktop.jpg);\n-    background-position: center;\n-    background-size: cover;\n     width: 50%;\n-    border-top-left-radius: 0.625rem;\n-    border-bottom-left-radius: 0.625rem;\n }\n \n+.image img {\n+    max-width: 100%;\n+    border-radius: 0.625rem;\n+}\n+\n .details {\n     width: 50%;\n     display: flex;\n     flex-direction: column;\n-    row-gap: 1.5rem;\n-    padding: 2.2rem 2.5rem;\n+    padding: 1.2rem 2.5rem;\n     border-top-right-radius: 0.625rem;\n     border-bottom-right-radius: 0.625rem;\n }\n \n"
+                },
+                {
+                    "date": 1706195079402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,8 @@\n     display: flex;\n     margin: 0 auto;\n     background-color: var(--white);\n     border-radius: 0.625rem;\n-    margin: 4rem auto;\n }\n \n .image {\n     width: 50%;\n"
+                },
+                {
+                    "date": 1706195118175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n .container {\n     min-width: 600px;\n     width: 30%;\n     display: flex;\n-    margin: 0 auto;\n+    margin: 4rem auto;\n     background-color: var(--white);\n     border-radius: 0.625rem;\n }\n \n"
+                },
+                {
+                    "date": 1706195317238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     background-color: var(--cream);\n }\n \n main {\n-    width: 100%;\n+    width: 60%;\n }\n \n .container {\n     min-width: 600px;\n"
+                },
+                {
+                    "date": 1706195339008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     background-color: var(--cream);\n }\n \n main {\n-    width: 60%;\n+    width: 100%;\n }\n \n .container {\n     min-width: 600px;\n"
+                },
+                {
+                    "date": 1706195404002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,9 @@\n     color: var(--very-dark-blue);\n }\n \n .description {\n-    width: 85%;\n+    \n     line-height: 1.5;\n     color: var(--dark-grayish-blue);\n     font-size: 14px;\n }\n"
+                },
+                {
+                    "date": 1706195420086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,12 +78,10 @@\n     color: var(--very-dark-blue);\n }\n \n .description {\n-    \n     line-height: 1.5;\n     color: var(--dark-grayish-blue);\n-    font-size: 14px;\n }\n \n .prices {\n     width: 100%;\n"
+                },
+                {
+                    "date": 1706195426166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,9 @@\n \n .description {\n     line-height: 1.5;\n     color: var(--dark-grayish-blue);\n+    font-size: 14px;\n }\n \n .prices {\n     width: 100%;\n"
+                },
+                {
+                    "date": 1706195446456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,8 @@\n \n .description {\n     line-height: 1.5;\n     color: var(--dark-grayish-blue);\n-    font-size: 14px;\n }\n \n .prices {\n     width: 100%;\n"
+                },
+                {
+                    "date": 1706195585334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,8 +87,9 @@\n     width: 100%;\n     display: flex;\n     align-items: center;\n     gap: 1.5rem;\n+    margin: auto;\n }\n \n .new_price {\n     font-size: 2.25rem;\n"
+                },
+                {
+                    "date": 1706195706494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,8 +91,9 @@\n     margin: auto;\n }\n \n .new_price {\n+    font-family: var(--font-heads);\n     font-size: 2.25rem;\n     color: var(--dark-cyan);\n }\n \n"
+                },
+                {
+                    "date": 1706195730640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,9 +91,9 @@\n     margin: auto;\n }\n \n .new_price {\n-    font-family: var(--font-heads);\n+    font-family: var(--font-body);\n     font-size: 2.25rem;\n     color: var(--dark-cyan);\n }\n \n"
+                },
+                {
+                    "date": 1706195778445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,9 +91,10 @@\n     margin: auto;\n }\n \n .new_price {\n-    font-family: var(--font-body);\n+    font-family: var(--font-heads);\n+    font-weight: 500;\n     font-size: 2.25rem;\n     color: var(--dark-cyan);\n }\n \n"
+                },
+                {
+                    "date": 1706195797510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,9 +93,9 @@\n \n .new_price {\n     font-family: var(--font-heads);\n     font-weight: 500;\n-    font-size: 2.25rem;\n+    font-size: 16px;\n     color: var(--dark-cyan);\n }\n \n .old_price {\n"
+                },
+                {
+                    "date": 1706195804178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,9 +93,9 @@\n \n .new_price {\n     font-family: var(--font-heads);\n     font-weight: 500;\n-    font-size: 16px;\n+    font-size: 20px;\n     color: var(--dark-cyan);\n }\n \n .old_price {\n"
+                },
+                {
+                    "date": 1706195812953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,9 +93,9 @@\n \n .new_price {\n     font-family: var(--font-heads);\n     font-weight: 500;\n-    font-size: 20px;\n+    font-size: 22px;\n     color: var(--dark-cyan);\n }\n \n .old_price {\n"
+                },
+                {
+                    "date": 1706195824827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,9 +93,9 @@\n \n .new_price {\n     font-family: var(--font-heads);\n     font-weight: 500;\n-    font-size: 22px;\n+    font-size: 24px;\n     color: var(--dark-cyan);\n }\n \n .old_price {\n"
+                },
+                {
+                    "date": 1706195831149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,9 +93,9 @@\n \n .new_price {\n     font-family: var(--font-heads);\n     font-weight: 500;\n-    font-size: 24px;\n+    font-size: 26px;\n     color: var(--dark-cyan);\n }\n \n .old_price {\n"
+                },
+                {
+                    "date": 1706195882176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,9 @@\n     text-transform: uppercase;\n     font-weight: 500;\n }\n \n-h1 {\n+.details h1 {\n     font-size: 2.375rem;\n     color: var(--very-dark-blue);\n }\n \n"
+                },
+                {
+                    "date": 1706195916192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,9 +73,11 @@\n     font-weight: 500;\n }\n \n .details h1 {\n-    font-size: 2.375rem;\n+    font-family: var(--font-heads);\n+    font-weight: 700;\n+    font-size: 26px;\n     color: var(--very-dark-blue);\n }\n \n .description {\n"
+                },
+                {
+                    "date": 1706195936878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n \n .details h1 {\n     font-family: var(--font-heads);\n     font-weight: 700;\n-    font-size: 26px;\n+    /* font-size: 26px; */\n     color: var(--very-dark-blue);\n }\n \n .description {\n"
+                },
+                {
+                    "date": 1706195963904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,8 @@\n \n .details h1 {\n     font-family: var(--font-heads);\n     font-weight: 700;\n-    /* font-size: 26px; */\n     color: var(--very-dark-blue);\n }\n \n .description {\n"
+                },
+                {
+                    "date": 1706196080047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,22 +64,23 @@\n     border-top-right-radius: 0.625rem;\n     border-bottom-right-radius: 0.625rem;\n }\n \n+.details h1 {\n+    font-family: var(--font-heads);\n+    font-weight: 700;\n+    color: var(--very-dark-blue);\n+    margin: auto;\n+}\n+\n .item-category {\n     font-size: 16px;\n     color: var(--dark-grayish-blue);\n     letter-spacing: 0.25rem;\n     text-transform: uppercase;\n     font-weight: 500;\n }\n \n-.details h1 {\n-    font-family: var(--font-heads);\n-    font-weight: 700;\n-    color: var(--very-dark-blue);\n-}\n-\n .description {\n     line-height: 1.5;\n     color: var(--dark-grayish-blue);\n }\n"
+                },
+                {
+                    "date": 1706196144586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,8 @@\n }\n \n .image img {\n     max-width: 100%;\n-    border-radius: 0.625rem;\n }\n \n .details {\n     width: 50%;\n"
+                },
+                {
+                    "date": 1706196215229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,8 @@\n     margin: auto;\n }\n \n .item-category {\n-    font-size: 16px;\n     color: var(--dark-grayish-blue);\n     letter-spacing: 0.25rem;\n     text-transform: uppercase;\n     font-weight: 500;\n"
+                },
+                {
+                    "date": 1706196328622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,8 +75,9 @@\n     color: var(--dark-grayish-blue);\n     letter-spacing: 0.25rem;\n     text-transform: uppercase;\n     font-weight: 500;\n+    margin: 1rem 0 0;\n }\n \n .description {\n     line-height: 1.5;\n"
+                },
+                {
+                    "date": 1706196418098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,8 +74,9 @@\n .item-category {\n     color: var(--dark-grayish-blue);\n     letter-spacing: 0.25rem;\n     text-transform: uppercase;\n+    font-family: var(--font-body);\n     font-weight: 500;\n     margin: 1rem 0 0;\n }\n \n"
+                },
+                {
+                    "date": 1706196510791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,8 +66,9 @@\n \n .details h1 {\n     font-family: var(--font-heads);\n     font-weight: 700;\n+    font-size: 2.2rem;\n     color: var(--very-dark-blue);\n     margin: auto;\n }\n \n"
+                },
+                {
+                    "date": 1706196538692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n \n .details h1 {\n     font-family: var(--font-heads);\n     font-weight: 700;\n-    font-size: 2.2rem;\n+    font-size: 2.125rem;\n     color: var(--very-dark-blue);\n     margin: auto;\n }\n \n"
+                },
+                {
+                    "date": 1706196580751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,10 +59,8 @@\n     width: 50%;\n     display: flex;\n     flex-direction: column;\n     padding: 1.2rem 2.5rem;\n-    border-top-right-radius: 0.625rem;\n-    border-bottom-right-radius: 0.625rem;\n }\n \n .details h1 {\n     font-family: var(--font-heads);\n"
+                },
+                {
+                    "date": 1706196610763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n .details {\n     width: 50%;\n     display: flex;\n     flex-direction: column;\n-    padding: 1.2rem 2.5rem;\n+    padding: 1.2rem 2rem;\n }\n \n .details h1 {\n     font-family: var(--font-heads);\n"
+                },
+                {
+                    "date": 1706196625245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n .details {\n     width: 50%;\n     display: flex;\n     flex-direction: column;\n-    padding: 1.2rem 2rem;\n+    padding: 1rem 2rem;\n }\n \n .details h1 {\n     font-family: var(--font-heads);\n"
+                },
+                {
+                    "date": 1706196849473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n \n .new_price {\n     font-family: var(--font-heads);\n     font-weight: 500;\n-    font-size: 26px;\n+    font-size: 28px;\n     color: var(--dark-cyan);\n }\n \n .old_price {\n"
+                },
+                {
+                    "date": 1706196857027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n \n .new_price {\n     font-family: var(--font-heads);\n     font-weight: 500;\n-    font-size: 28px;\n+    font-size: 30px;\n     color: var(--dark-cyan);\n }\n \n .old_price {\n"
+                },
+                {
+                    "date": 1706196888204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n \n .new_price {\n     font-family: var(--font-heads);\n     font-weight: 500;\n-    font-size: 30px;\n+    font-size: 1.9rem;\n     color: var(--dark-cyan);\n }\n \n .old_price {\n"
+                },
+                {
+                    "date": 1706196955959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,9 +107,9 @@\n \n button {\n     width: 100%;\n     padding: 1rem 0;\n-    margin: 0 auto;\n+    margin: 1rem auto;\n     display: flex;\n     justify-content: center;\n     align-items: center;\n     color: var(--white);\n"
+                },
+                {
+                    "date": 1706196995336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n }\n \n .image img {\n     max-width: 100%;\n+    border-radius: 0.625rem;\n }\n \n .details {\n     width: 50%;\n"
+                },
+                {
+                    "date": 1706197025542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n }\n \n .image img {\n     max-width: 100%;\n-    border-radius: 0.625rem;\n+    border-top-left-radius: 0.625rem;\n }\n \n .details {\n     width: 50%;\n"
+                },
+                {
+                    "date": 1706197040390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n \n .image img {\n     max-width: 100%;\n     border-top-left-radius: 0.625rem;\n+    border-bottom-left-radius: 0.625rem;\n }\n \n .details {\n     width: 50%;\n"
+                },
+                {
+                    "date": 1706197092511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,9 @@\n     margin: 1rem 0 0;\n }\n \n .description {\n-    line-height: 1.5;\n+    line-height: 1.6;\n     color: var(--dark-grayish-blue);\n }\n \n .prices {\n"
+                },
+                {
+                    "date": 1706197116091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,8 +81,9 @@\n     margin: 1rem 0 0;\n }\n \n .description {\n+    font-weight: 500;\n     line-height: 1.6;\n     color: var(--dark-grayish-blue);\n }\n \n"
+                },
+                {
+                    "date": 1706197122553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,9 @@\n     margin: 1rem 0 0;\n }\n \n .description {\n-    font-weight: 500;\n+    font-weight: 700;\n     line-height: 1.6;\n     color: var(--dark-grayish-blue);\n }\n \n"
+                },
+                {
+                    "date": 1706197133414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,9 @@\n     margin: 1rem 0 0;\n }\n \n .description {\n-    font-weight: 700;\n+    font-weight: 500;\n     line-height: 1.6;\n     color: var(--dark-grayish-blue);\n }\n \n"
+                },
+                {
+                    "date": 1706197145703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,8 @@\n     margin: 1rem 0 0;\n }\n \n .description {\n-    font-weight: 500;\n     line-height: 1.6;\n     color: var(--dark-grayish-blue);\n }\n \n"
+                },
+                {
+                    "date": 1706197153062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,8 +81,9 @@\n     margin: 1rem 0 0;\n }\n \n .description {\n+    font-weight: 500;\n     line-height: 1.6;\n     color: var(--dark-grayish-blue);\n }\n \n"
+                },
+                {
+                    "date": 1706197161285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,8 @@\n     margin: 1rem 0 0;\n }\n \n .description {\n-    font-weight: 500;\n     line-height: 1.6;\n     color: var(--dark-grayish-blue);\n }\n \n"
+                },
+                {
+                    "date": 1706197177547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,8 +69,9 @@\n     font-weight: 700;\n     font-size: 2.125rem;\n     color: var(--very-dark-blue);\n     margin: auto;\n+    line-height: 1.6;\n }\n \n .item-category {\n     color: var(--dark-grayish-blue);\n"
+                },
+                {
+                    "date": 1706197188249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n     font-weight: 700;\n     font-size: 2.125rem;\n     color: var(--very-dark-blue);\n     margin: auto;\n-    line-height: 1.6;\n+    line-height: 1.1;\n }\n \n .item-category {\n     color: var(--dark-grayish-blue);\n"
+                },
+                {
+                    "date": 1706197194837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n     font-weight: 700;\n     font-size: 2.125rem;\n     color: var(--very-dark-blue);\n     margin: auto;\n-    line-height: 1.1;\n+    line-height: 1.0;\n }\n \n .item-category {\n     color: var(--dark-grayish-blue);\n"
+                },
+                {
+                    "date": 1706197208111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n     font-weight: 700;\n     font-size: 2.125rem;\n     color: var(--very-dark-blue);\n     margin: auto;\n-    line-height: 1.0;\n+    line-height: 0.9;\n }\n \n .item-category {\n     color: var(--dark-grayish-blue);\n"
+                },
+                {
+                    "date": 1706197213625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n     font-weight: 700;\n     font-size: 2.125rem;\n     color: var(--very-dark-blue);\n     margin: auto;\n-    line-height: 0.9;\n+    line-height: 1;\n }\n \n .item-category {\n     color: var(--dark-grayish-blue);\n"
+                },
+                {
+                    "date": 1706197233409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     background-color: var(--cream);\n }\n \n main {\n-    width: 100%;\n+    width: 80%;\n }\n \n .container {\n     min-width: 600px;\n"
+                },
+                {
+                    "date": 1706197244951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     box-sizing: border-box;\n }\n \n body {\n-    width: 100%;\n+    width: 80%;\n     height: 100vh;\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n@@ -34,9 +34,9 @@\n     background-color: var(--cream);\n }\n \n main {\n-    width: 80%;\n+    width: 100%;\n }\n \n .container {\n     min-width: 600px;\n"
+                },
+                {
+                    "date": 1706197250400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     box-sizing: border-box;\n }\n \n body {\n-    width: 80%;\n+    width: 100%;\n     height: 100vh;\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n"
+                },
+                {
+                    "date": 1706197432493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n * {\n     margin: 0;\n     padding: 0;\n     box-sizing: border-box;\n+    width: 80%;\n }\n \n body {\n     width: 100%;\n"
+                },
+                {
+                    "date": 1706197441676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n * {\n     margin: 0;\n     padding: 0;\n     box-sizing: border-box;\n-    width: 80%;\n }\n \n body {\n     width: 100%;\n"
+                },
+                {
+                    "date": 1706197455166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,9 @@\n     box-sizing: border-box;\n }\n \n body {\n-    width: 100%;\n-    height: 100vh;\n+    width: 80%;\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     justify-content: center;\n"
+                },
+                {
+                    "date": 1706197468420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,10 @@\n     box-sizing: border-box;\n }\n \n body {\n-    width: 80%;\n+    width: 100%;\n+    height: 100vh;\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     justify-content: center;\n@@ -68,9 +69,9 @@\n     font-weight: 700;\n     font-size: 2.125rem;\n     color: var(--very-dark-blue);\n     margin: auto;\n-    line-height: 1;\n+    line-height: 0.9;\n }\n \n .item-category {\n     color: var(--dark-grayish-blue);\n"
+                },
+                {
+                    "date": 1706197479767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n     font-weight: 700;\n     font-size: 2.125rem;\n     color: var(--very-dark-blue);\n     margin: auto;\n-    line-height: 0.9;\n+    line-height: 1;\n }\n \n .item-category {\n     color: var(--dark-grayish-blue);\n"
+                },
+                {
+                    "date": 1706214410193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n }\n \n .image img {\n     max-width: 100%;\n+    height: auto;\n     border-top-left-radius: 0.625rem;\n     border-bottom-left-radius: 0.625rem;\n }\n \n@@ -137,4 +138,25 @@\n }\n .attribution a {\n     color: hsl(228, 45%, 44%);\n }\n+\n+@media (max-width: 575.98px) {\n+    main {\n+        width: auto;\n+    }\n+    \n+    .container {\n+        width: 100%;\n+        flex-direction: column;\n+    }\n+\n+    .image,\n+    .details {\n+        width: 100%;\n+        height: auto;\n+    }\n+\n+    .details {\n+        padding: 1rem;\n+    }\n+}\n"
+                },
+                {
+                    "date": 1706214491668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -140,12 +140,8 @@\n     color: hsl(228, 45%, 44%);\n }\n \n @media (max-width: 575.98px) {\n-    main {\n-        width: auto;\n-    }\n-    \n     .container {\n         width: 100%;\n         flex-direction: column;\n     }\n"
+                },
+                {
+                    "date": 1706214631969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,8 +141,9 @@\n }\n \n @media (max-width: 575.98px) {\n     .container {\n+        min-width: auto;\n         width: 100%;\n         flex-direction: column;\n     }\n \n"
+                },
+                {
+                    "date": 1706214825185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,8 +144,9 @@\n     .container {\n         min-width: auto;\n         width: 100%;\n         flex-direction: column;\n+        margin: auto;\n     }\n \n     .image,\n     .details {\n"
+                },
+                {
+                    "date": 1706214833351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,9 +144,9 @@\n     .container {\n         min-width: auto;\n         width: 100%;\n         flex-direction: column;\n-        margin: auto;\n+        margin: 1rem auto;\n     }\n \n     .image,\n     .details {\n"
+                },
+                {
+                    "date": 1706214856504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,9 +144,9 @@\n     .container {\n         min-width: auto;\n         width: 100%;\n         flex-direction: column;\n-        margin: 1rem auto;\n+        margin: 4rem auto;\n     }\n \n     .image,\n     .details {\n"
+                },
+                {
+                    "date": 1706214940669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,9 +144,9 @@\n     .container {\n         min-width: auto;\n         width: 100%;\n         flex-direction: column;\n-        margin: 4rem auto;\n+        padding: 4rem auto;\n     }\n \n     .image,\n     .details {\n"
+                },
+                {
+                    "date": 1706214981844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,9 +144,9 @@\n     .container {\n         min-width: auto;\n         width: 100%;\n         flex-direction: column;\n-        padding: 4rem auto;\n+        margin: 4rem auto;\n     }\n \n     .image,\n     .details {\n"
+                },
+                {
+                    "date": 1706215028977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,9 +144,8 @@\n     .container {\n         min-width: auto;\n         width: 100%;\n         flex-direction: column;\n-        margin: 4rem auto;\n     }\n \n     .image,\n     .details {\n"
+                },
+                {
+                    "date": 1706215051122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -140,8 +140,13 @@\n     color: hsl(228, 45%, 44%);\n }\n \n @media (max-width: 575.98px) {\n+    main {\n+        margin: 1rem;\n+        padding: 1rem;\n+    }\n+    \n     .container {\n         min-width: auto;\n         width: 100%;\n         flex-direction: column;\n"
+                }
+            ],
+            "date": 1706026340889,
+            "name": "Commit-0",
+            "content": "@import url(\"https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap\");\n\n"
+        }
+    ]
+}
